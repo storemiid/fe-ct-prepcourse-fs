@@ -7,7 +7,13 @@ function esVocal(letra) {
   // "u" ---> "Es vocal"
   // "n" ---> "Dato incorrecto"
   // "texto largo" ---> "Dato incorrecto"
-  // Tu código:
+  // Tu código:var 
+  arreglo=["a","e","i","o","u"]
+  for(var i=0;i<=arreglo.length;i++){
+    if(arreglo[i]==letra)
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
 }
 
 module.exports = esVocal;

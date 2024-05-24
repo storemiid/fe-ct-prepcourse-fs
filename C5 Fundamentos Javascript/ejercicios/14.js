@@ -5,7 +5,9 @@ function mayorQueCincuenta(num) {
   // Por ejemplo: 
   // 51 ---> true
   // 15 ---> false
-  // Tu código:
+  // Tu código:50
+  if(num>50)return true
+  else return false
 }
 
 module.exports = mayorQueCincuenta;
