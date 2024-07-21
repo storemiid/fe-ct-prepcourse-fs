@@ -5,6 +5,23 @@ function continueStatement(num) {
   // se continúa con la siguiente iteración.
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
+  var areh=[]
+  
+  for(var i=0;i<10;i++){
+   
+   
+    if(i===5)
+      
+     continue
+     num=num+2
+     areh[i]=+num
+   
+   
+  }
+
+  areh=areh.filter((i)=>i!=5)
+return areh
+ 
 }
 
 module.exports = continueStatement;
