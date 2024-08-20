@@ -7,6 +7,10 @@ function sort(sortBy, list) {
    // recibes --> ("a", [{ a: 1, b: 3 }, { a: 3, b: 2 }, { a: 2, b: 40 }])
    // retorna --> [{ a: 3, b: 2 }, { a: 2, b: 40 }, { a: 1, b: 3 }]
    // Tu código:
+   
+   list.sort((elem,elem2)=>elem2[sortBy] - elem[sortBy])
+   return list
 }
+sort("a", [{ a: 1, b: 3 }, { a: 3, b: 2 }, { a: 2, b: 40 }])
 
 module.exports = sort;
